@@ -1,0 +1,26 @@
+<form [formGroup]="gestorForm" (ngSubmit)="onSubmit()">
+    <p>
+      <mat-form-field appearance="fill">
+        <mat-label>Gestor Issue</mat-label>
+        <input matInput formControlName="issue">
+      </mat-form-field>
+    </p>
+  
+    <p>
+      <mat-form-field appearance="fill">
+        <mat-label>Description</mat-label>
+        <input matInput formControlName="description">
+      </mat-form-field>
+    </p>
+  
+    <p>
+      <mat-form-field appearance="fill">
+        <mat-label>Date</mat-label>
+        <input matInput formControlName="date">
+      </mat-form-field>
+    </p>
+    <p>
+      <button mat-raised-button color="primary" type="submit" [disabled]="!gestorForm.valid">Submit</button>
+    </p>
+  
+  </form>

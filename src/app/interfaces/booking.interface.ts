@@ -1,3 +1,4 @@
+import { Gestor } from "./gestor.interface"
 import { Point } from "./point.interface"
 import { Route } from "./route.interface"
 import { User } from "./user.interface"
@@ -22,5 +23,6 @@ export interface Booking{
 			cancelPrice: number
 		}
 	},
-	selectedStopPoint: string
+	selectedStopPoint: string,
+	gestor: Gestor
 }

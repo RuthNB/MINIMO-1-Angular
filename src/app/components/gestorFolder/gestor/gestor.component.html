@@ -1,0 +1,15 @@
+<div class="gestor">
+    <mat-card class="card">
+        <mat-card-header>
+            <mat-card-title>{{gestor.issue}}</mat-card-title>
+            </mat-card-header>
+        <mat-card-content>Gestor ID: {{gestor._id}}</mat-card-content>
+        <mat-card-content>Gestor Issue: {{gestor.issue}}</mat-card-content>
+        <mat-card-content>Gestor Description: {{gestor.description}}</mat-card-content>
+        <mat-card-content>Gestor Date: {{gestor.date}}</mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="warn" (click)="delete()">delete</button>
+            <button mat-raised-button color="primary" (click)="update()">edit</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

@@ -30,7 +30,7 @@ export class VehiclesComponent implements OnInit {
     filter: true,
   };
   onCellClicked( e: CellClickedEvent): void {
-    this.router.navigate(['/vehicles/', e.data._id]);
+    this.router.navigate(['/vehicle/', e.data._id]);
   }
   ngOnInit(): void {
     this.vehicleSrv.getAll().subscribe(

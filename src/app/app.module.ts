@@ -33,7 +33,13 @@ import { EditUserComponent } from './components/usersFolder/edit-user/edit-user.
 import { VehiclesComponent } from './components/vehicleFolder/vehicles/vehicles.component';
 import { VehicleComponent } from './components/vehicleFolder/vehicle/vehicle.component';
 import { VehicleFormComponent } from './components/vehicleFolder/vehicle-form/vehicle-form.component';
-
+import { EditVehicleComponent } from './components/vehicleFolder/edit-vehicle/edit-vehicle.component';
+import { GestorComponent } from './components/gestorFolder/gestor/gestor.component';
+import { GestorsComponent } from './components/gestorFolder/gestors/gestors.component';
+import { GestorFormComponent } from './components/gestorFolder/gestor-form/gestor-form.component';
+import { AddGestorComponent} from './components/gestorFolder/add-gestor/add-gestor.component';
+import { GestorProfileComponent } from './components/gestorFolder/gestor-profile/gestor-profile.component';
+import { EditGestorComponent } from './components/gestorFolder/edit-gestor/edit-gestor.component';
 
 @NgModule({
   declarations: [
@@ -50,16 +56,21 @@ import { VehicleFormComponent } from './components/vehicleFolder/vehicle-form/ve
     PageNotFoundComponent,
     BookingComponent,
     BookingFormComponent,
-
     FormroutesComponent,
     RouteComponent,
-
     AddUserComponent,
     UserProfileComponent,
     EditUserComponent,
     VehiclesComponent,
     VehicleComponent,
     VehicleFormComponent,
+    EditVehicleComponent,
+    GestorComponent,
+    GestorsComponent,
+    GestorFormComponent,
+    AddGestorComponent,
+    GestorProfileComponent,
+    EditGestorComponent,
   ],
   imports: [
     MatTableModule,

@@ -23,6 +23,7 @@ import { VehicleFormComponent } from './components/vehicleFolder/vehicle-form/ve
 import { VehicleComponent } from './components/vehicleFolder/vehicle/vehicle.component';
 import { VehicleResolver } from './resolver/vehicle.resolver';
 import { VehiclesComponent } from './components/vehicleFolder/vehicles/vehicles.component';
+import { EditVehicleComponent } from './components/vehicleFolder/edit-vehicle/edit-vehicle.component';
 //import { BookingResolver } from './resolver/booking.resolver';
 
 
@@ -47,6 +48,7 @@ const routes: Routes = [
   {path: "vehicles/create", component: VehicleFormComponent},
   {path: "vehicles/:id", component: VehicleComponent, resolve: { vehicleData: VehicleResolver }},
   {path: "vehicles", component: VehiclesComponent},
+  {path: "vehicles/:_id/editVehicle", component: EditUserComponent},
 ];
 
 @NgModule({
