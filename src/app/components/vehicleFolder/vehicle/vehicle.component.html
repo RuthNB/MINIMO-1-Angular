@@ -1,0 +1,26 @@
+<div class="vehicle">
+    <mat-card class="card">
+        <mat-card-header style="justify-content: center;">
+           <mat-card-title>VEHICLE INFORMATION</mat-card-title>
+        </mat-card-header>
+        <div class="divider"></div>
+        <mat-card-content>
+
+            <div class="container">
+                <h2>General Information</h2> 
+                <div class="content">
+                    <h4>Vehicle ID: {{vehicle._id}}</h4>
+                    <h4>Model: {{vehicle.model}}</h4>
+                    <h4>Brand: {{vehicle.brand}}</h4>
+                    <h4>Year: {{vehicle.year}}</h4>
+                    <h4>Owner: {{vehicle.owner}}</h4>
+                </div>
+            </div>
+            
+        </mat-card-content>
+        <mat-card-actions style="margin: 10px;">
+            <button mat-raised-button color="warn" (click)="delete()">delete</button>
+            <button mat-raised-button color="primary" [routerLink]="['edit']">edit</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
